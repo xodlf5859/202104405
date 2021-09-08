@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app> <!-- 이걸 해야 톰캣이 읽음 -->
+	<servlet><!--대분류에서 소분류로 간다.  -->
+		<servlet-name>loginServlet</servlet-name>	
+		<servlet-class>com.jsp.servlet.LoginServlet</servlet-class> <!-- 서블릿 클래스가  나오면 url패턴이 나온다 -->
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>	<!-- 서블릿 네임은 맞춰야 톰캣이 읽음 -->
+		<url-pattern>/login</url-pattern><!--패키지 명까지 다 적어야됨  -->
+	</servlet-mapping> <!--서블릿과 서블릿매핑으로 구성되있다.  -->
+</web-app>
